@@ -51,3 +51,12 @@ Go to arduino IDE and install some library
 ### Telegram Bot Library
 
 * Download the **Telegram Bot Library** from the following link [download Telegram Board Library](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot)
+
+* After that we need to include the download zip file to the arduino IDE by goint to **Sketch->Include Library->Add .ZIP library**
+
+
+![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/add_zip_file.png)
+
+
+
+
