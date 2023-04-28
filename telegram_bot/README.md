@@ -32,7 +32,7 @@ Then you get the ID by chatting **/getid**
 ![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/get_id.png)
 
 
-## Programming 
+## Library Installation 
 
 Go to arduino IDE and install some library
 
@@ -57,6 +57,33 @@ Go to arduino IDE and install some library
 
 ![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/add_zip_file.png)
 
+
+## Programming 
+
+* Download the code from the following link 
+
+[Telegram Bot Code](https://github.com/Theara-Seng/IOT_ESP32/tree/main/telegram_bot)
+
+*and copy the code in the **telegram_bot.ino**
+
+![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/code.png)
+
+* Then in the following code you need to change this into your following wifi name and password
+
+```sh
+// Replace with your network credentials
+const char* ssid = "wifi_name";
+const char* password = "wifi_password";
+```
+
+* and for the telegram token and id, copy it from the telegram configuration and change it here
+
+```sh
+// Initialize Telegram BOT
+#define BOTtoken "token"  // your Bot Token (Get from Botfather)
+
+#define CHAT_ID "chatid"  // your CHAT_ID
+```
 
 
 
