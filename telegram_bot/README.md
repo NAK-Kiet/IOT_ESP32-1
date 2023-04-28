@@ -31,3 +31,23 @@ Then you get the ID by chatting **/getid**
 
 ![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/get_id.png)
 
+
+## Programming 
+
+Go to arduino IDE and install some library
+
+### Arduino JSON Library
+
+* Go into **Sketch->Include Library-> Manage Library**
+
+
+![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/include_libarary.png)
+
+* Then search for the **arduinoJson** and install it
+
+
+![Esp32 Board](https://github.com/Theara-Seng/IOT_ESP32/blob/main/telegram_bot/image/arduinojson.png)
+
+### Telegram Bot Library
+
+* Download the **Telegram Bot Library** from the following link [download Telegram Board Library](https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot)
