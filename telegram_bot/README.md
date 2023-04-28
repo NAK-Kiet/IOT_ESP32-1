@@ -85,5 +85,8 @@ const char* password = "wifi_password";
 #define CHAT_ID "chatid"  // your CHAT_ID
 ```
 
+## Upload the code 
+
+After upload the code, you will see the following 
 
 
