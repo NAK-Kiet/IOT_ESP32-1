@@ -12,14 +12,14 @@
 #include "addons/RTDBHelper.h"
 
 // Insert your network credentials
-#define WIFI_SSID "minnie700"
-#define WIFI_PASSWORD "theara700"
+#define WIFI_SSID "wifi"
+#define WIFI_PASSWORD "password"
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyAa3pLkh_BOzYdJ87Ya8fYWz4WX8SS0QdM"
+#define API_KEY "api_key"
 
 // Insert RTDB URLefine the RTDB URL */
-#define DATABASE_URL "https://led-firebase-3e874-default-rtdb.firebaseio.com/" 
+#define DATABASE_URL "database-url" 
 
 //Define Firebase Data object
 FirebaseData fbdo;
@@ -72,8 +72,8 @@ void setup() {
 void loop() {
   if (Firebase.ready() && signupOK && (millis() - sendDataPrevMillis > 1000 || sendDataPrevMillis == 0)) {
     sendDataPrevMillis = millis();
-    if (Firebase.RTDB.getInt(&fbdo, "/value")) {
-      intValue = fbdo.intData();
+    if (Firebase.RTDB.getString(&fbdo, "/value")) {
+      intValue = fbdo.stringData().toInt();
       if (intValue == 1){
          digitalWrite(2,HIGH);
       }else if (intValue == 0){
